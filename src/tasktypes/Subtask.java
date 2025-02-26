@@ -1,3 +1,7 @@
+package tasktypes;
+
+import enums.Status;
+import enums.TaskType;
 
 public class Subtask extends Task {
     private final int epicId;

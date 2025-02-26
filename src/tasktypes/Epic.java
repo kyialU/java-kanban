@@ -1,3 +1,8 @@
+package tasktypes;
+
+import enums.Status;
+import enums.TaskType;
+
 import java.util.ArrayList;
 import java.util.List;
 

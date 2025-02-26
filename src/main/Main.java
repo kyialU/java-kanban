@@ -1,3 +1,12 @@
+package main;
+
+import enums.Status;
+import enums.TaskType;
+import manager.TaskManager;
+import tasktypes.Epic;
+import tasktypes.Subtask;
+import tasktypes.Task;
+
 public class Main {
     public static void main(String[] args) {
         TaskManager manager = new TaskManager();

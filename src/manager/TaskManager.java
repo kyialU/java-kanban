@@ -1,3 +1,10 @@
+package manager;
+
+import enums.TaskType;
+import tasktypes.Epic;
+import tasktypes.Subtask;
+import tasktypes.Task;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,13 +29,13 @@ public class TaskManager {
         }
 
         switch (task.getType()) {
-            case TASK:
+            case TaskType.TASK:
                 tasks.put(task.getId(), task);
                 return true;
-            case EPIC:
+            case TaskType.EPIC:
                 epics.put(task.getId(), (Epic) task);
                 return true;
-            case SUBTASK:
+            case TaskType.SUBTASK:
                 Subtask subtask = (Subtask) task;
                 if (!epics.containsKey(subtask.getEpicId())) {
                     System.out.println("Ошибка: Epic с id " + subtask.getEpicId() + " не существует.");
@@ -64,13 +71,13 @@ public class TaskManager {
         }
 
         switch (task.getType()) {
-            case TASK:
+            case TaskType.TASK:
                 tasks.put(task.getId(), task);
                 return true;
-            case EPIC:
+            case TaskType.EPIC:
                 epics.put(task.getId(), (Epic) task);
                 return true;
-            case SUBTASK:
+            case TaskType.SUBTASK:
                 Subtask subtask = (Subtask) task;
                 if (!epics.containsKey(subtask.getEpicId())) {
                     System.out.println("Ошибка: Epic с id " + subtask.getEpicId() + " не существует.");

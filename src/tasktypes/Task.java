@@ -1,6 +1,11 @@
+package tasktypes;
+
+import enums.Status;
+import enums.TaskType;
+
 import java.util.Objects;
 
-class Task {
+public class Task {
     private final int id;
     private final String name;
     private final String description;
