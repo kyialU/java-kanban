@@ -1,7 +1,4 @@
-package tasktypes;
-
-import enums.Status;
-import enums.TaskType;
+package tasks;
 
 import java.util.Objects;
 
