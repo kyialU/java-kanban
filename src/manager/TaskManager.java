@@ -1,14 +1,7 @@
 package manager;
 
-import enums.TaskType;
-import tasktypes.Epic;
-import tasktypes.Subtask;
-import tasktypes.Task;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import tasks.*;
+import java.util.*;
 
 public class TaskManager {
     private final Map<Integer, Task> tasks = new HashMap<>();
